@@ -1,0 +1,41 @@
+<br>
+ <br>
+    <div class="hero-cookie">
+    <div class="hero-text">
+      <div class = "shadow_text"><h1 style="font-size:50px">Our Cookies </h1></div>
+      <div class = "shadow_text"><p style="font-size:25px">Our chefs bake fresh cookies everyday at each location. Our talented 
+      chefs skills and love for cookies help make wonderfully fresh-baked cookies 
+      every single day! </p></div>
+    </div>
+  </div>
+    
+  <br> 
+  <br> 
+  <br> 
+  <br> 
+
+
+    
+
+    <% @cookie.each do |goods| %>
+      <div class="row">
+        <div class="col s12 m6 l3">
+           <div class="card">
+                   <div class="card-image">
+                     <img src = '<%= goods.img %>' >
+                          <span class="card-title text color #0277bd light-blue darken-3">
+                            <p  > <%= goods.title %> </p>    
+                          </span>
+                      </div>
+                    <div class="card-content ">
+                 <p> <%= goods.description %> </p>
+              </div>
+            <div class="card-action">
+          <p>Price: <%= goods.price %> </p>
+         </div>
+    </div>
+  </div>
+  <% end %>
+
+  
+  

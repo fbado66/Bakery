@@ -1,0 +1,41 @@
+
+ <br>
+ <br>
+    <div class="hero-muffin">
+    <div class="hero-text">
+    <div class = "shadow_text"><h1 style="font-size:50px">Our Muffins </h1></div>
+    <div class = "shadow_text"><p style="font-size:25px">High quality ingredients are essential in our delicious gourmet muffins.
+      We pride ourselves in supporting local farmers and ensure the utmost 
+      freshness in doing so.</p></div>
+    </div>
+  </div>
+    
+  <br> 
+  <br> 
+  <br> 
+  <br> 
+
+    <% @muffin.each do |goods| %>
+      <div class="row">
+        <div class="col s12 m6 l3">
+           <div class="card">
+                   <div class="card-image">
+                     <img src = '<%= goods.img %>' >
+                          <span class="card-title">
+                          <div class="shadow_text2"><p> <%= goods.title %> </p> </div> 
+                          </span>
+                      </div>
+                    <div class="card-content ">
+                 <p> <%= goods.description %>,  </p>
+              </div>
+            <div class="card-action">
+          <p>Price: <%= goods.price %> </p>
+          <div class="z-depth-5">
+         </div>
+    </div>
+  </div>
+  </div>
+  <% end %>
+
+
+

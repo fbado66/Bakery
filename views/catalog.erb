@@ -1,0 +1,38 @@
+
+
+ <br>
+ <br>
+    <div class="hero-catalog">
+    <div class="hero-text">
+    <div class = "shadow_text"><h1 style="font-size:50px">Our Catalog </h1></div>
+    <div class = "shadow_text"><p style="font-size:25px">We keep tradition and culture along our baked-goods</p></div>
+    </div>
+  </div>
+    <style>
+    
+    </style>
+  <br> 
+  <br> 
+  <br> 
+  <br> 
+
+  
+
+
+<% @catalog.each do |items| %>
+  <div class="col s12 m7 l8 horizontal">
+    <div class="card horizontal">
+      <div class="card-image catalog">
+      <img src = '<%= items.img %>' >
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+        <p> <%= items.title %> </p>
+        <p>Price: <%= items.price %> </p>   
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <% end %>
+

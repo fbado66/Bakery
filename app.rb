@@ -66,7 +66,7 @@ end
 # muffins array to display after, using materialize and loops 
 muffin=[]
 def generator_muffins
-  muffin_banana = Goods.new('Gluten Free Banana Almond Butter', 'images/muffins_images/almond-butter-banana-muffin.jpg', 'Dare to try this beauty', '$1.00')
+  muffin_banana = Goods.new('Gluten Free Banana Almond Butter', 'images/muffins_images/almond-butter-banana-muffin.jpg', 'Dare to try this beauty' , '$1.00')
   muffin_apple = Goods.new(' Double Apple Bran Muffins', 'images/muffins_images/apple-bran-muffin.jpg', 'One wont ever be enough', '$1.00')
   muffin_camberry = Goods.new(' Cranberry Bran Muffins', 'images/muffins_images/camberry_brand_muffin.jpg', 'Take me with you everywhere ', '$1.00')
   muffin_cornmeal = Goods.new(' Cornmeal Raisin Muffins', 'images/muffins_images/cormeal_raisin_muffin.jpg', 'Keep the traditions rolling', '$1.00')

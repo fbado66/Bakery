@@ -73,6 +73,35 @@ body, html {
   position: relative;
 }
 
+.hero-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("images/about_us_logo.jpg");
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-career {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("images/career_logo.jpg");
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-thanks {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("images/thanks_logo.png");
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
 
 
 .hero-text {
@@ -115,4 +144,21 @@ text-shadow: 1px 1px black;
 
 h6{
   text-align: center;
+}
+
+.fonttitle{
+color: #ee6e73; 
+}
+
+.bold { 
+  font-weight: bold; 
+}
+
+.text{
+  color: black;
+  font-size: 18px;
+}
+
+.center{
+  text-align: center; 
 }

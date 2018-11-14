@@ -162,3 +162,8 @@ color: #ee6e73;
 .center{
   text-align: center; 
 }
+
+footer{
+  position: absolute!important;
+  width: 100%;
+}

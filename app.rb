@@ -10,21 +10,21 @@ require "sendgrid-ruby"
 cakes=[]
 def generator_cakes
   cake_banana = Goods.new('Banana Cake', 'images/cakes_images/Banana-Cake.jpeg', 'The best banana Cake you ll ever have', '$1.00')
-  cake_carrot = Goods.new(' Carrot Cake', 'images/cakes_images/Carrot-Cake.jpeg', 'This cake is so good, you wont get enough', '$1.00')
+  cake_carrot = Goods.new(' Carrot Cake', 'images/cakes_images/Carrot-Cake.jpeg', 'Is so good, you wont get enough', '$1.00')
   cake_choc_but = Goods.new(' Chocolate with Buttercream Cake', 'images/cakes_images/Chocolate-Cake-wth-Chocolate-Buttercream.jpeg', 'Keeping the richest flavors is tradition', '$1.00')
-  cake_confetti = Goods.new(' Confetti Cake', 'images/cakes_images/Confetti-Cake.jpeg', 'For those special ocasions when the party element is needed', '$1.00')
-  cake_devil_food = Goods.new(' Devils Food Cake', 'images/cakes_images/Devils-Food-Cake.jpeg', 'Dare to taste a piece of the fordibben heavens', '$1.00')
+  cake_confetti = Goods.new(' Confetti Cake', 'images/cakes_images/Confetti-Cake.jpeg', 'For those special ocasions', '$1.00')
+  cake_devil_food = Goods.new(' Devils Food Cake', 'images/cakes_images/Devils-Food-Cake.jpeg', 'Piece of the fordibben heavens', '$1.00')
   cake_coconut = Goods.new(' Coconut Cake', 'images/cakes_images/Coconut-Cake.jpeg', 'This cake will transport you to the tropical ', '$1.00')
   cake_hummingbird = Goods.new(' Hummingbird Cake', 'images/cakes_images/Hummingbird-Cake.jpeg', 'Channel your inner nature spirit dare to try', '$1.00')
-  cake_naked = Goods.new(' Naked Cake', 'images/cakes_images/Naked-Cake.jpeg', 'To share with that special person, or perhaps people? ', '$1.00')
+  cake_naked = Goods.new(' Naked Cake', 'images/cakes_images/Naked-Cake.jpeg', 'To share with that special person', '$1.00')
   cake_pistacho = Goods.new(' Pistachio Cake', 'images/cakes_images/Pistachio-Cake.jpeg', 'Pistacho is present in the house, keeping it real', '$1.00')
   cake_spice = Goods.new('Pumkin Spice Cake', 'images/cakes_images/Pumpkin-Spice-Cake.jpeg', 'Time to step out of the conform zone ', '$1.00')
   cake_red_velvet = Goods.new(' Red Velvet Cake', 'images/cakes_images/Red-Velvet-Cake.jpeg', 'Keeping it as elegant as it gets never tasted this good', '$1.00')
   cake_rose_top = Goods.new(' Rose Top Cake', 'images/cakes_images/Rose-Top.jpeg', 'Cake has its beauty, but our is the best', '$1.00')
 
   [cake_banana, cake_carrot, cake_choc_but, cake_confetti, 
-  cake_devil_food, cake_coconut, cake_hummingbird, cake_naked,
-   cake_pistacho, cake_spice, cake_red_velvet, cake_rose_top ]
+   cake_coconut, cake_hummingbird, cake_naked,cake_pistacho,
+    cake_spice, cake_red_velvet, cake_rose_top, cake_devil_food ]
 
 end 
 
@@ -76,7 +76,7 @@ def generator_muffins
   muffin_orange = Goods.new(' Orange and Date Crumble Muffins', 'images/muffins_images/orange-date-crumble-muffin.jpg', 'Adding fruits to make it better', '$1.00')
   muffin_sweet = Goods.new(' Sweet Potato Chocolate Chunk', 'images/muffins_images/sweet-potato-chocolate-chunk.jpg', 'Main flavor says present in the house', '$1.00')
   muffin_vegan = Goods.new(' Vegan Blueberry Muffins', 'images/muffins_images/vegan-blueberry-muffin.jpg', 'Vegans we are in the house as well', '$1.00')
-  muffin_wild = Goods.new(' Wild Blueberry Spelt Oat', 'images/muffins_images/wild-blueberry-spelt-oat-muffins.jpg', 'When the flavor is just right ad you know it', '$1.00')
+  muffin_wild = Goods.new(' Wild Blueberry Spelt Oat', 'images/muffins_images/wild-blueberry-spelt-oat-muffins.jpg', 'When the flavor is just right', '$1.00')
   muffin_zucchini = Goods.new('Zucchini Gruyere and Black Pepper', 'images/muffins_images/zucchini-gruyere-black-papper-muffin.jpg', 'Try it, I know you will learn to like me', '$1.00')
   
   [muffin_banana, muffin_apple, muffin_camberry, muffin_cornmeal,
@@ -84,7 +84,7 @@ def generator_muffins
     muffin_sweet, muffin_wild, muffin_zucchini, muffin_vegan ]
 end 
 
-catalog=[]
+Items=[]
 def generator_catalog
   muffin_banana = Items.new('Gluten Free Banana Almond Butter Muffins', 'images/muffins_images/almond-butter-banana-muffin.jpg', '$1.00')
   muffin_apple = Items.new(' Double Apple Bran Muffins', 'images/muffins_images/apple-bran-muffin.jpg', '$1.00')
@@ -160,6 +160,9 @@ get "/muffins" do
   @muffin = generator_muffins
   erb :muffin
 end
+
+
+
 
 get "/term_of_use" do 
   erb :term_of_us

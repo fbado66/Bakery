@@ -1,21 +1,15 @@
 
-
- <br>
- <br>
+ <br><br>
     <div class="hero-cake">
-    <div class="hero-text">
-    <div class = "shadow_text"><h1 style="font-size:50px">Our Cakes </h1></div>
-    <div class = "shadow_text"><p style="font-size:25px">High Cakes have never been this good, we go the extra mile to create 
-      decadent flavors and we make sure that every last bite is as good as 
-      the first.</p></div>
+      <div class="hero-text">
+        <div class = "shadow_text"><h1 style="font-size:50px">Our Cakes </h1></div>
+          <div class = "shadow_text"><p style="font-size:25px">High Cakes have never been this good, we go the extra mile to create 
+          decadent flavors and we make sure that every last bite is as good as 
+          the first.</p></div>
+      </div>
     </div>
-  </div>
     
-  <br> 
-  <br> 
-  <br> 
-  <br> 
-
+  <br><br><br> <br> 
 
     <% @cake.each do |goods| %>
       <div class="row">
@@ -23,23 +17,20 @@
            <div class="card">
               <div class="card-image">
                   <img src = '<%= goods.img %>' >
-                  <span class="card-title">
+                    <span class="card-title">
                       <div class="shadow_text2"> <p> <%= goods.title %> </p> </div>   
-                  </span>
+                    </span>
               </div>
-
-                  <div class="card-content ">
-                    <p> <%= goods.description %> </p>
-                  </div>
-                  <div class="card-action">
-                     <p>Price: <%= goods.price %> </p>
-                        <div class="z-depth-5">
-                        </div>
-                  </div>
-          </div>
-  </div>
-  <% end %>
-
-
+              <div class="card-content ">
+                <p> <%= goods.description %> </p>
+              </div>
+              <div class="card-action">
+                <p>Price: <%= goods.price %> </p>
+                  <div class="z-depth-5"></div>      
+              </div>
+            </div>
+        </div>
+    <% end %>
+<br>
 
 
